@@ -1,0 +1,25 @@
+.jumbotron {
+	cursor: pointer;
+	position: absolute;
+	width: 600px;
+	height: 600px;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	img { 
+		position: absolute;
+		margin: auto; 
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+.rounded {
+	border: 3px solid black;
+	border-radius: 50em;
+	background-color: #DFFFDD;
+}

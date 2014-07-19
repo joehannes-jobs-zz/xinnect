@@ -1,0 +1,19 @@
+{
+  "packages": {
+    "jade": {},
+    "sugarjs": {},
+    "iron-router": {},
+    "crypto-base": {},
+    "crypto-md5": {},
+    "crypto-sha1": {},
+    "scss": {},
+    "font-awesome-sass": {},
+    "bourbon": {},
+    "neat": {},
+    "normalize.css": {},
+    "fonts-calligraphy": {},
+    "semantic-ui": {},
+    "jqueryui": {},
+    "accounts-templates-semantic-ui": {}
+  }
+}

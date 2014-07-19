@@ -1,0 +1,70 @@
+.switch {
+	.huge.multitasking.icon {
+		margin-top: -8rem !important;
+		font-size: 1.5rem;
+		&:hover {
+			content: "\f014" !important;
+			color: red;
+		}
+	}
+	.huge.icon:not(.multitasking) {
+		margin-top: -4rem !important;
+		margin-left: -.5rem !important;
+		font-size: 4rem;
+		vertical-align: middle;
+		border: 1px solid gray;
+		@extend .icon__size--xl;
+	}
+
+	.massive.icon {
+		margin-top: -2rem !important;
+		margin-left: -4rem !important;
+		font-size: 4rem;
+		vertical-align: middle;
+		border: 1px solid gray;
+		@extend .icon__size--xl;
+	}
+	&.loading {
+
+	}
+	&.anonymous {
+		.login.button:hover {
+			&:before {
+				content: "\f168" !important;
+				color: teal;
+			}
+			box-shadow: 0 0 15px 5px teal;
+		}
+	}
+	&.personal {
+		.avatar {
+			border: 2px solid gray !important;
+		}
+		.avatar:hover {
+			&:before {
+				content: "\f011" !important;
+				color: teal;
+			}
+			background: none !important;
+			background-color: white !important;
+			box-shadow: 0 0 15px 5px teal;
+		}
+		.avatar.active {
+			&:before {
+				content: "\f05b" !important;
+				color: teal;
+			}
+			background: none !important;
+			background-color: white !important;
+		}
+		.avatar.shadow {
+			&:before {
+				content: "\f067" !important;
+				color: teal;
+			}			
+			background: none !important;
+			background-color: white !important;
+			box-shadow: 0 0 15px 5px teal;
+		}
+	}
+}

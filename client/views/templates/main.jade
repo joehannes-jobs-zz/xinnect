@@ -1,0 +1,94 @@
+template(name="layout")
+	.ui.three.column.page.grid(class="#{dummy}")
+		.ui.column
+			+yield(region="profiles")
+		.ui.column
+			+yield
+		.ui.column
+			+yield(region="content")
+
+template(name="pw")
+	+signinForm
+
+template(name="disallowed")
+	.disallowed
+		.ui.massive.circular.center.aligned.inverted.segment.avatar(style="background-image: url(disallowed.jpg);")
+		h2 silence is golden
+
+template(name="contacts")
+	.contacts
+		each contacts
+			+contact
+
+template(name="contact")
+	.ui.basic.segment(class="#{visibility}")
+		.ui.circular.center.aligned.inverted.segment.avatar(style="background-image: url(#{avatar});" data-id="#{id}")
+		.ui.segment
+			.ui.ribbon.label(class="#{category_color}") #{display_name}
+			.ui.right.corner.label(class="#{category_color}"): i.user.icon
+			.ui.center.aligned.attached.segment
+				i.medium.blue.circular.inverted.facebook.icon.link
+				i.medium.red.circular.inverted.google.plus.icon.link
+				i.medium.black.circular.inverted.mail.icon.link
+			.ui.bottom.attached.raised.label
+					i.phone.icon
+					| #{telephone}
+
+template(name="dummys")
+	.dummys
+		each users
+			+contact
+
+template(name="graph")
+	.graph#graph
+		
+template(name="anonymousSwitch")
+	.ui.vertical.divider.anonymous.switch
+		i.circular.inverted.huge.green.user.icon.link.login.button
+
+template(name="loadingSwitch")
+	.ui.vertical.divider.loading.switch
+		i.circular.inverted.huge.green.loading.icon
+
+template(name="personalSwitch")
+	.ui.vertical.divider.personal.switch
+		if trashy
+			i.ui.circular.center.aligned.inverted.huge.red.trash.multitasking.icon.link(style="z-index: 99999;")
+		else 
+			if loading
+				i.ui.circular.center.aligned.inverted.huge.teal.loading.multitasking.icon.link(style="z-index: 99999;")
+			else
+				i.ui.circular.center.aligned.inverted.huge.teal.bolt.multitasking.icon.link(style="z-index: 99999;")
+		i.ui.circular.center.aligned.inverted.segment.massive.avatar.icon.link(style="background-image: url(#{avatar}); z-index: 99999;")
+
+template(name="comments")
+	.ui.piled.blue.segment
+		h2.ui.header
+			i.inverted.circular.blue.comment.icon
+			| Kommentare ...
+		.ui.comments
+			.comments
+				each comments
+					.comment
+						a.avatar: img(src="#{avatar}")
+						.content
+							a.author #{name}
+							.metadata
+								span.date #{time}
+							.text #{comment}
+							.actions &nbsp;
+			.ui.basic.segment
+				.ui.connected.items
+					each journalists
+						.ui.item.move.up.reveal
+							.image.visible.content.flex(style="background-color: rgb(233,233,233);")
+								img.ui.circular.image.icon__size--l.pull__up--xs(src="#{avatar}")							
+							.h2.hidden.center.aligned.content
+								i.inverted.circular.empty.large.toggle.checkbox.icon
+								.name #{name}
+			form.ui.reply.form
+				.field
+					textarea(style="height: 100px;")
+				.ui.fluid.green.labeled.submit.icon.button
+					i.edit.icon
+					| Kommentieren

@@ -1,0 +1,119 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "jade": {},
+      "sugarjs": {},
+      "iron-router": {},
+      "crypto-base": {},
+      "crypto-md5": {},
+      "crypto-sha1": {},
+      "scss": {},
+      "font-awesome-sass": {},
+      "bourbon": {},
+      "neat": {},
+      "normalize.css": {},
+      "fonts-calligraphy": {},
+      "semantic-ui": {},
+      "jqueryui": {},
+      "accounts-templates-semantic-ui": {}
+    },
+    "packages": {
+      "jade": {
+        "git": "https://github.com/mquandalle/meteor-jade.git",
+        "tag": "v0.2.4",
+        "commit": "a47a4c59daaa57e7fe5f1544d4ea76d95a5c9abf"
+      },
+      "sugarjs": {
+        "git": "https://github.com/crapthings/meteor-sugarjs.git",
+        "tag": "v1.4.0.1",
+        "commit": "2841738b2c28d2d97c6cf3c41c4558f59f93db0e"
+      },
+      "iron-router": {
+        "git": "https://github.com/EventedMind/iron-router.git",
+        "tag": "v0.7.1",
+        "commit": "d1ffb3f06ea4c112132b030f2eb1a70b81675ecb"
+      },
+      "crypto-base": {
+        "git": "https://github.com/oortcloud/meteor-crypto-base.git",
+        "tag": "v3.1.2.1",
+        "commit": "5df8d82a0595553415bbfae2930c6ecbeece5794"
+      },
+      "crypto-md5": {
+        "git": "https://github.com/oortcloud/meteor-crypto-md5.git",
+        "tag": "v3.1.2.2",
+        "commit": "75bbb3eeace302122d3554a6212a6fe92553fa18"
+      },
+      "crypto-sha1": {
+        "git": "https://github.com/dandv/meteor-crypto-sha1.git",
+        "tag": "v3.1.2.1",
+        "commit": "f5c87d44aa4bdda6b33c7e2c21ea396d9d0f436d"
+      },
+      "scss": {
+        "git": "https://github.com/fourseven/meteor-scss.git",
+        "tag": "v0.9.3",
+        "commit": "185f3b2787fb85e653f7b7bf603d1493ed14943d"
+      },
+      "font-awesome-sass": {
+        "git": "https://github.com/reywood/meteor-font-awesome-sass.git",
+        "tag": "v4.1.0-1",
+        "commit": "64b05d3c7654cf83b9f85240d1a340cbe1d55123"
+      },
+      "bourbon": {
+        "git": "https://github.com/chicagogrooves/meteor-bourbon.git",
+        "tag": "v3.1.8.1",
+        "commit": "b55f0968fe7d4a2886898cd8e81394de066a3ae1"
+      },
+      "neat": {
+        "git": "https://github.com/chicagogrooves/meteor-neat.git",
+        "tag": "v1.5.0",
+        "commit": "6c318cce1c02e822d6a340c547273b29b6379197"
+      },
+      "normalize.css": {
+        "git": "https://github.com/rithis/meteor-normalize.css",
+        "tag": "v2.0.1",
+        "commit": "671aba13223dd7d7ec1d26a6b2461943d7c4fa18"
+      },
+      "fonts-calligraphy": {
+        "git": "https://github.com/awatson1978/fonts-calligraphy.git",
+        "tag": "v0.2.0",
+        "commit": "0659f4fcbc4fc5c32a19e0dae8de1885cb5bbbb0"
+      },
+      "semantic-ui": {
+        "git": "https://github.com/nooitaf/meteor-semantic-ui.git",
+        "tag": "v0.19.0",
+        "commit": "23ddf7b58db125cc33d0d95d58fcac940f262481"
+      },
+      "jqueryui": {
+        "git": "https://github.com/mizzao/meteor-jqueryui.git",
+        "tag": "v1.10.4",
+        "commit": "c75906fc9e1e19abf1ad5b2963925122ff8a0336"
+      },
+      "accounts-templates-semantic-ui": {
+        "git": "https://github.com/splendido/meteor-accounts-templates-semantic-ui.git",
+        "tag": "v0.0.4",
+        "commit": "f292374630d06ce437c936989def75fcc17a3f89"
+      },
+      "blaze-layout": {
+        "git": "https://github.com/EventedMind/blaze-layout.git",
+        "tag": "v0.2.4",
+        "commit": "b40e9b0612329288d75cf52ad14a7da64bb8618f"
+      },
+      "build-fetcher": {
+        "git": "https://github.com/mizzao/meteor-build-fetcher.git",
+        "tag": "v0.1.0",
+        "commit": "e3813b1fc7f5c576e8e1fa4c51ae6f4687780a35"
+      },
+      "accounts-templates-core": {
+        "git": "https://github.com/splendido/accounts-templates-core.git",
+        "tag": "v0.0.11",
+        "commit": "0e45146a21409c6d1984108664f8809672343194"
+      },
+      "accounts-t9n": {
+        "git": "https://github.com/splendido/meteor-accounts-t9n.git",
+        "branch": "master",
+        "commit": "9189c58aeba752d3e369f9fad5e1f718d90d2b3f"
+      }
+    }
+  }
+}
